@@ -8,7 +8,6 @@ export const Complete = ({notes, setNotes}) => {
       completearr = [...notes];
       completearr.map((obj)=>{
         if(obj.completed === true){
-          console.log(obj);
         }
       })
   })();

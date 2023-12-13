@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { Search } from './Search'
 
 const NoteForm = ({notes, setNotes}) => {
-    let searchNote = [...notes]
     const [title, setTitle] = useState("")
     const [desc, setDesc] = useState("")
 
@@ -24,7 +23,7 @@ const NoteForm = ({notes, setNotes}) => {
         <input className='p-4 border-2 mx-2 bg-black text-white font-extrabold rounded-lg border-black' type="submit" value="Add" />
 
         </form>
-        <Search searchNote={searchNote} />
+        <Search />
     </div>
   )
 }

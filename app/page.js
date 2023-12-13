@@ -11,22 +11,10 @@ const TestPage = () => {
   const [showInprogress, setShowInprogress] = useState(false);
 
 
-    const [notes, setNotes] = useState([
-        {
-          title: "bncdk",
-          desc: "lksjdf",
-          completed: false
-        },
-        {
-          title: "bncdk",
-          desc: "lksjdf",
-          completed: true
-        }
-    ])
+    const [notes, setNotes] = useState([])
 
     
     useEffect(() => {
-        // console.log(notes)
     }, [notes])
 
     const handleNotes = () =>{
@@ -39,7 +27,6 @@ const TestPage = () => {
       setShowComponent(true);
       setAllNotes(false);
       setShowInprogress(false);
-      // return <Complete />;
     };
     const inprogress = () => {
       setShowInprogress(true);

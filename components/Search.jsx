@@ -1,11 +1,6 @@
 import React from 'react'
 
-export const Search = ({searchNote}) => {
-
-
-    const sn = searchNote.filter((obj)=>{
-        if(obj){}
-    })
+export const Search = () => {
 
 
   return (

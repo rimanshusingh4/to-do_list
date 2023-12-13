@@ -8,7 +8,6 @@ export const Inprogress = ({notes}) => {
     inprogress = [...notes];
     inprogress.map((obj)=>{
         if(obj.Status === false){
-          console.log(obj);
         }
       })
   })();
